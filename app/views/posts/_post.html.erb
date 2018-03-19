@@ -1,0 +1,9 @@
+ <div class="well well-sm" id="<%= @post.id %>" >
+  <strong><%= @post.title %>:</strong>
+  <br>
+  <div class="text-right">
+     <%= link_to 'ver detalle', post, class: 'btn btn-xs btn-success' %>
+    <%= link_to 'Editar', edit_post_path(@post), data: {remote: true}, class: 'btn btn-xs btn-warning' %>
+    <%= link_to 'Eliminar', post_path(@post), method: :delete, data: { confirm: 'Estás seguro que deseas eliminar el Comentario?', remote: true }, class: 'btn btn-xs btn-danger' %>
+  </div>
+</div>

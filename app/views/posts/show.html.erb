@@ -26,7 +26,6 @@
 	<div class="col-md-12" id="comments">
 		<% counter = 0 %>
 		<% @comments.each do |comment| %>
-			#<%= counter += 1 %>
 			<div class="well well-sm" id="<%= comment.id %>" >
 				<strong><%= comment.user.name %>:</strong>
 				<br>

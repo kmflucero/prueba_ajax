@@ -1,7 +1,7 @@
-<%= form_with(model: post, html: { class: 'form-horizontal' }) do |f| %>
+<%= form_with(model: Post.new, html: { class: 'form-horizontal' }) do |f| %>
   <fieldset>
     <div class="form-group">
-      <%= f.label :title, 'Título', class: 'col-lg-2 control-label' %>
+      <%= f.label :title, 'sTítulo', class: 'col-lg-2 control-label' %>
       <div class="col-lg-4">
         <%= f.text_field :title, autofocus: true, class: 'form-control', placeholder: 'Título del post' %>
       </div>
